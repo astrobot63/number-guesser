@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>🔢 Number Guesser</h1>
+            <p class="subtitle">Can you find the secret number?</p>
+        </header>
+
+        <main class="game-card">
+            <!-- Difficulty Selector -->
+            <div class="difficulty-selector">
+                <label>Select Difficulty:</label>
+                <div class="difficulty-buttons">
+                    <button onclick="startGame(difficulties.BEGINNER)" class="difficulty-btn" data-difficulty="BEGINNER">Beginner</button>
+                    <button onclick="startGame(difficulties.NORMAL)" class="difficulty-btn" data-difficulty="NORMAL">Normal</button>
+                    <button onclick="startGame(difficulties.HARD)" class="difficulty-btn" data-difficulty="HARD">Hard</button>
+                    <button onclick="startGame(difficulties.NIGHTMARE)" class="difficulty-btn" data-difficulty="NIGHTMARE">Nightmare</button>
+                </div>
+            </div>
+
+            <!-- Game Info -->
+            <div class="game-info">
+                <h2 id="h2">Select a difficulty to start</h2>
+                <div class="info-row">
+                    <span class="timer-display">⏱️ <span id="stopwatch">-</span></span>
+                    <span class="attempts-display">Attempts: <span id="attempts">0</span></span>
+                </div>
+            </div>
+
+            <!-- Guess Input Section -->
+            <div class="guess-section">
+                <label for="guess">Your Guess:</label>
+                <input type="number" placeholder="Enter your guess" id="guess">
+                <button onclick="exec()" id="execBtn">Guess</button>
+            </div>
+
+            <!-- Feedback -->
+            <div class="feedback-section">
+                <h3 id="text"></h3>
+            </div>
+
+            <!-- New Game Button -->
+            <div class="new-game-section">
+                <button onclick="resetGame()" id="newGameBtn" class="new-game-btn" style="display:none;">New Game</button>
+            </div>
+        </main>
+
+        <footer class="game-footer">
+            <p id="developer">Made by Qusay Mohanad Abu-Nayla • 2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
