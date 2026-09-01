@@ -1,0 +1,159 @@
+body{
+    background-color: hsl(240, 66%, 48%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1rem;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 400px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px hsl(0, 0%, 24%);
+    text-align: center;
+    align-self: center;
+}
+
+@media(max-width: 600px){
+    main{
+        width: 110%;
+        padding: 1rem;
+    }
+
+    ul{
+        gap: 0.2rem;
+    }
+
+    li{
+        flex-shrink: 1;
+    }
+
+    label{
+        font-size: 0.8rem;
+        padding: 8px 4px;
+    }
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 + p{
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 37%);
+}
+
+h2{
+    font-size: 1.3rem;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+li{
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid hsl(240, 66%, 48%);
+    display: inline-block;
+    transition: 0.3s ease background-color, 0.3s ease transform, 0.3s ease color;
+}
+
+label:hover{
+    background-color: hsl(240, 66%, 48%);
+    color: white;
+    transform: translateY(-2px);
+}
+
+input[type="radio"]:checked + label{
+    background-color: hsl(240, 66%, 48%);
+    color: white;
+    border: 3px solid hsl(240, 66%, 68%);
+}
+
+input[type="number"]{
+    padding: 3px;
+    border: 2px solid hsl(0, 0%, 64%);
+    width: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#guess{
+    background-color: hsl(120, 100%, 35%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.35rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease background-color, 0.3s ease transform;
+}
+
+#guess:hover{
+    background-color: hsl(120, 100%, 40%);
+    transform: translateY(-2px);
+}
+
+#new-game{
+    background-color: hsl(0, 100%, 40%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.45rem;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s ease background-color, 0.3s ease transform;
+    display: none;
+}
+
+#new-game:hover{
+    background-color: hsl(0, 100%, 50%);
+    transform: translateY(-2px);
+}
+
+#attempts{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(240, 66%, 38%);
+}
+
+#message2{
+    font-size: 1.45rem;
+    font-weight: 500;
+    color: hsl(39, 84%, 38%);
+}
+
+#message1{
+    color: white;
+    text-align: center;
+}
+
+#developer{
+    text-align: center;
+    margin-top: 20px;
+    color: hsl(0, 0%, 74%);
+}

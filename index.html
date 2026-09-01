@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <h1>🔢 Number Guesser</h1>
+        <p id="message1">Can you find the secret number?</p>
+    <main>
+        <h2>Difficulty</h2>
+        <ul>
+            <li>
+                <input type="radio" id="beginner" name="RBtn" value="beginner">
+                <label for="beginner">Beginner</label>
+            </li>
+            <li>
+                <input type="radio" id="normal" name="RBtn" value="normal">
+                <label for="normal">Normal</label>
+            </li>
+            <li>
+                <input type="radio" id="hard" name="RBtn" value="hard">
+                <label for="hard">Hard</label>
+            </li>
+            <li>
+                <input type="radio" id="nightmare" name="RBtn" value="nightmare">
+                <label for="nightmare">Nightmare</label>
+            </li>
+
+        </ul>
+        <p id="message3">Select a difficulty to start</p>
+        <p id="attempts">Attempts: 0</p>
+        <h2>Your Guess:</h2>
+        <input type="number" id="user-guess">
+        <button id="guess">Guess</button>
+        <p id="message2">Make your guess!</p>
+        <button id="new-game">New Game</button>
+    </main>
+    <footer id="developer">Made by Qusay Mohanad Abu-Nayla • 2026</footer>
+    <script src="main.js"></script>
+</body>
+</html>
