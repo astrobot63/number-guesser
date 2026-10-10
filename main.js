@@ -130,22 +130,3 @@ newGame.addEventListener("click", () => {
     guessButton.disabled = false;
     userGuess.disabled = false;
 });
-
-
-/* Banner Ad Controls */
-
-const adContent = document.querySelector("#ad-content");
-const closeAd = document.querySelector("#close-ad");
-const showAd = document.querySelector("#show-ad");
-
-closeAd.addEventListener("click", () => {
-    adContent.style.display = "none";
-    closeAd.style.display = "none";
-    showAd.style.display = "block";
-});
-
-showAd.addEventListener("click", () => {
-    adContent.style.display = "block";
-    closeAd.style.display = "block";
-    showAd.style.display = "none";
-});
